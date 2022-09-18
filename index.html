@@ -209,7 +209,7 @@ function searching(event) {
   links(cityyy);
 }
 
-function getLocation(position) {
+function location(position) {
   let apiKey = "c95d60a1e3adbeb286133f1ebebc2579";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(show);
